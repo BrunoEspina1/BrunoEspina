@@ -1,0 +1,219 @@
+:root{
+    --background-color1: #111111;
+    --font1: 'Roboto', sans-serif;
+    --font-color1: #FFFFFF;
+    --font-color2: #929292;
+    --complementary-color1: #87CEEB;
+}
+html{
+    background-color: var(--background-color1);
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: var(--font1);
+    text-decoration: none;
+    list-style: none;
+    color: var(--font-color1);
+}
+/*Header style*/
+#navbar{
+    margin: 1%;
+    font-size: 1.5em;
+}
+#navbar h1{
+    position: absolute;
+}
+#navbar ul{
+    display: flex;
+    justify-content: flex-end;
+
+    margin: 1%;
+    font-size: 1em;
+}
+#navbar li{
+    margin-top: 1%;
+    margin-left: 2%;
+    
+    
+}
+.nav-link >a:hover{
+
+    border-bottom: 3px solid var(--complementary-color1);
+    animation: nav-link-animation 0.3s;
+}
+
+/*End of header style*/
+
+/*Section "Home" style*/
+#home{
+    display: block;
+    height: 100vh;
+}
+.home-text{
+    width: 100%;
+    margin-left: -50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 3em;
+    text-align: center;
+}
+.home-text h3{
+    font-size: 1em;
+}
+.blue{
+    color: var(--complementary-color1);
+}
+
+
+/*End of Home section*/
+
+/*About Section*/
+.row{
+    display: flex;
+    position: relative;
+}
+#img-me{
+    width: 80%;
+    height: 80%;
+    border-radius: 15%;
+
+    margin: 5% 0 0 5%;
+}
+.about-col-2{
+    width: 50%;
+    margin-top: -35px;
+
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    
+}
+.title{
+    font-size: 2.5em;
+    color: var(--font-color2);
+    margin: 10% 0 2% 0;
+
+}
+/*End "about" section*/
+
+/*Start "projects" section*/
+#projects > h2{
+
+    font-size: 3em;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -2%;
+
+
+}
+
+.project{
+    display: flex;
+
+    background-color: var(--background-color1);
+    margin: 5% 0 0 0;
+
+    height: 80vh;
+}
+.project-description{
+    color: var(--font-color1);
+
+    width: 40%;   
+    margin-top: 0;
+    margin-left: 5%;
+
+}
+.img-div{
+    position: relative;
+    display: inline-block;
+
+    margin-left: 10%;
+}
+.project-img{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    border-radius: 5%;
+    width: 550px;
+    height: 350px;
+}
+.project-img-link{
+    transition: filter 0.3s ease;
+}
+.project-img-link:hover .project-img{
+    
+    filter: grayscale(100%) brightness(50%) blur(4px);
+    
+}
+.project-img-link:hover .icon-link {
+    opacity: 1;
+}
+
+.icon-link{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.icon-link i{
+    font-size: 180px;
+}
+
+/*This will be the same but with the opposite position values*/
+.middle-project{
+    margin-top: 0;
+}
+.description-middle-project{
+    justify-content: flex-end;
+    width: 40%;
+    margin-left: 8%;
+    
+}
+.img-middle-project{
+    position: relative;
+    justify-content: flex-start;
+
+    border-radius: 5%;
+    width: 550px;
+    height: 450px;
+    margin-left: 3%;
+}
+
+
+/*End "projects" section*/
+
+
+
+/*=====================Animations==================*/
+
+
+/*Animation for the border bottom of the nav links*/
+@keyframes nav-link-animation{
+    0%{border-image: linear-gradient(to right, var(--complementary-color1),var(--background-color1) 0%)1}
+    10%{border-image: linear-gradient(to right, var(--complementary-color1),var(--background-color1) 20%)1}
+    20%{border-image: linear-gradient(to right, var(--complementary-color1),var(--background-color1) 40%)1}
+    30%{border-image: linear-gradient(to right, var(--complementary-color1),var(--background-color1) 60%)1}
+    40%{border-image: linear-gradient(to right, var(--complementary-color1),var(--background-color1) 80%)1}
+    50%{border-image: linear-gradient(to right, var(--complementary-color1),var(--background-color1) 90%)1}
+    60%{border-image: linear-gradient(to right, var(--complementary-color1),var(--background-color1) 100%)1}
+    70%{border-image: linear-gradient(to right, var(--complementary-color1),var(--background-color1) 120%)1}
+    80%{border-image: linear-gradient(to right, var(--complementary-color1),var(--background-color1) 140%)1}
+    100%{border-image: linear-gradient(to right, var(--complementary-color1),var(--background-color1) 150%)1}
+}
+
+
+
+
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- google fonts links -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/61eeea6301.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+
+            <ul>
+                <li class="nav-link"><a href="#home">Home</a></li>
+                <li class="nav-link"><a href="#about">About me</a></li>
+                <li class="nav-link"><a href="#projects">Projects</a></li>
+                <li class="nav-link"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="home-text">
+                <h1>Hello, I'm <span class="blue">Bruno Espina</span> </h1>
+                <h3>I am a <span class="blue typing"></span></h3>
+            </div>
+            <!--Div used for pull apart the sections (the "home-text" div has a position of absolute)-->
+            <div style="width: 100%; height: 100vh;"></div>
+        </section>
+        <section id="about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img id="img-me" alt="picture-of-me"
+                        src="https://images.pexels.com/photos/1670187/pexels-photo-1670187.jpeg?auto=compress&cs=tinysrgb&w=600">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="title">About me</h2>
+                    <p>
+                        Greetings, I'm Bruno Espina, a driven software development enthusiast currently pursuing a degree in Software
+                        Development
+                        Engineering. Despite being in the early stages of my career,
+                        I'm resolute in my commitment to excellence in the tech field.
+                        <br></br>
+                        My journey in software development has allowed me to gain proficiency in web technologies like <span
+                            class="blue">HTML, CSS, and JavaScript</span>, complemented by
+                        practical experience with <span class="blue">C# and SQL</span>. My ambition? To evolve into a versatile full-stack developer, harnessing
+                        cutting-edge technologies to craft impactful digital solutions.
+                    
+                        Dedication to continuous improvement is at the core of my work ethic. My eagerness to explore emerging technologies
+                        and deliver exceptional results drives me forward.
+                        <br></br>
+                        I'm keen to connect with like-minded professionals, potential collaborators, and forward-thinking organizations to
+                        embark on meaningful projects that challenge the status quo and drive innovation.
+                    </p>
+                    
+                </div>
+
+            </div>
+
+
+        </section>
+        <section id="projects">
+            <h2 style="font-size: 4em;"><span class="blue">My Projects</span></h2>
+
+            <div class="project">
+                <div class="row">
+                    <div class="project-description">
+                        <h2 class="title">ATM Software</h2>
+                        <p>Experience my proficiency in C# and SQL database management through the creation of
+                            a fully functional Windows ATM Machine. This project features a login
+                            system, comprehensive database management, and a user-friendly interface—all
+                            fully implemented in Spanish. Explore realistic ATM functionalities, including fund
+                            transfers
+                            and transaction history. This project reflects my dedication to delivering practical,
+                            multilingual solutions.</p>
+                    </div>
+                    <div class="img-div project-img-link">
+                        <a href="https://github.com/BrunoEspina1/ATM_Simulator" target="_blank">
+                            <img class="project-img" src="images/Projects Images/ATM/atm-main.jpg">
+                            <div class="icon-link">
+                                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project middle-project">
+                <div class="row">
+                    <div class="img-middle-project project-img-link">
+                        <a href="https://github.com/BrunoEspina1/Company_Website_Template" target="_blank">
+                            <img class="project-img"
+                                src="images/Projects Images/website template/website-landingpage.jpg">
+                            <div class="icon-link">
+                                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="description-middle-project">
+                        <h2 class="title">Web Page Template</h2>
+                        <p>Discover my web development skills through this dynamic company web page template.
+                            I've crafted an engaging online presence with three distinct sections. The eye-catching
+                            landing page sets the stage,
+                            while the product showcase section elegantly displays your offerings.
+                            Share your company's story and facilitate communication with a comprehensive footer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- JavaScript files -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
+            integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="script.js"></script>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
