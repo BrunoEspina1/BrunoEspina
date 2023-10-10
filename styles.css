@@ -26,11 +26,7 @@ html, body{
     margin: 1%;
     font-size: 1.5em;
 
-    margin-top: 0;
-    position: fixed;
-    width: 98%;
-    z-index: 1;
-    background-color: var(--background-color1);
+   
     
 }
 #navbar h1{
@@ -290,6 +286,13 @@ footer{
 /*Responsive design*/
 @media (max-width: 765px){
     /*Adjust correctly the header*/
+    #navbar{
+        margin-top: 0;
+        position: fixed;
+        width: 98%;
+        z-index: 1;
+        background-color: var(--background-color1);
+    }
     #navbar ul{
         font-size: .8em;
 
