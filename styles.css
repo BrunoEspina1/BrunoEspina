@@ -6,9 +6,10 @@
     --font-color2: #929292;
     --complementary-color1: #87CEEB;
 }
-html{
+html, body{
     background-color: var(--background-color1);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 *{
     margin: 0;
@@ -63,6 +64,7 @@ html{
 #home{
     display: block;
     height: 100vh;
+    text-align: center;
 }
 .home-text{
     width: 100%;
@@ -100,6 +102,11 @@ html{
 .row{
     display: flex;
     position: relative;
+}
+.reverse-row{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 5%;
 }
 #img-me{
     width: 80%;
@@ -142,9 +149,10 @@ html{
     display: flex;
 
     background-color: var(--background-color1);
-    margin: 5% 0 0 0;
-
-    height: 80vh;
+    margin: 0 0 10% 0;
+}
+#projects > h2{
+    margin: 5% auto;
 }
 .project-description{
     color: var(--font-color1);
@@ -158,7 +166,18 @@ html{
     position: relative;
     display: inline-block;
 
-    margin-left: 10%;
+    margin: 0 5% 0 15%;
+    height: 75%;
+}
+.img-div-left{
+    position: relative;
+    display: inline-block;
+
+    margin-right: 8%;
+    height: 75%;
+}
+.reverse-row-img{
+    margin-right: 50%;
 }
 .project-img{
     display: flex;
@@ -183,7 +202,7 @@ html{
 
 .icon-link{
     position: absolute;
-    top: 35%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
@@ -195,7 +214,12 @@ html{
 
 /*This is for the second project */
 .middle-project{
-    margin-top: 0;
+    display: flex;
+
+    background-color: var(--background-color1);
+    margin: 5% 0 0 0;
+
+    height: 80vh;
 }
 .description-middle-project{
     justify-content: flex-end;
@@ -246,7 +270,7 @@ footer{
     text-align: center;
 }
 .contact-link > a:hover{
-    transition: all 0.2s;
+    transition: 0.3s ease-in-out;
     font-size: 1.4em;
 }
 .contact-link > h2{
@@ -255,6 +279,102 @@ footer{
 }
 
 /*End footer design*/
+
+/*Responsive design*/
+@media (max-width: 765px){
+    /*Adjust correctly the header*/
+    #navbar ul{
+        font-size: .8em;
+
+    }
+    .nav-link{
+        margin-top: 2%;
+    }
+    /*Ajust the home text*/
+    #home{
+        font-size: 0.6em;
+    }
+    .home-text-2ndline{
+        width: 95%;
+    }
+    /*Adjust "about" section*/
+    .row{
+        flex-direction: column;
+    }
+    .about-col-1{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .about-col-2{
+        position: relative;
+        width: 85%;
+        left: 0;
+        font-size: 0.6em;
+        margin: 0 auto 2% auto;
+        text-align: center;
+    }
+    /*Adjust "projects" section*/
+    #projects{
+        font-size: 0.7em;
+        margin-top: 1%;
+    }
+    #projects > h2{
+        margin-bottom: -80px;
+    }
+    .project-description{
+        width: 100%;
+        margin: 10% auto;
+        text-align: center;
+    }
+    .img-div{
+        margin: 0 5%;
+        margin-bottom: -100px;
+    }
+    .project-img{
+        width: 100%;
+        height: 90%;
+    }
+    .img-div-left{
+        height: 75%;
+        margin: 0 5%;
+    }
+
+    /*Footer Responsive Design*/
+    .contact-text{
+        font-size: 0.8em;
+    }
+    .contact-links{
+        font-size: 1em;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px){
+    
+    /*The home is ok so I start on the about*/
+    .about-col-1{
+        width: 50%;
+    }
+    .about-col-2{
+        font-size: 0.8em;
+    }
+  #projects{
+    font-size: 0.9em;
+  }
+  .project-img{
+    width: 400px;
+  }
+  
+  .img-div{
+    margin-right: 2%;
+  }
+  .img-div-left{
+    margin-left: 2%;
+  }
+
+  /*Footer*/
+  .contact-links{
+    font-size: 1.1em;
+  }
+}
 
 
 
