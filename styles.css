@@ -25,6 +25,13 @@ html, body{
 #navbar{
     margin: 1%;
     font-size: 1.5em;
+
+    margin-top: 0;
+    position: fixed;
+    width: 98%;
+    z-index: 1;
+    background-color: var(--background-color1);
+    
 }
 #navbar h1{
     position: absolute;
