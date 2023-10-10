@@ -1,4 +1,4 @@
-/*Animation from the home text*/
+/*Animation from the home text */
 var typedf = new Typed(".home-first-line-text-typing",{
     stringsElement: "#home-first-line-text",
     typeSpeed: 50,
